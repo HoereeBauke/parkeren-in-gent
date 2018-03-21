@@ -27,8 +27,8 @@ const PATHS = {
 
 gulp.task( 'default', function() {
 	let htmlWatcher = gulp.watch(PATHS.HTML.SRC, ['copy-html']);
-	let cssWatcher = gulp.watch(PATHS.JS.SRC, ['css']);
-	let jsWatcher = gulp.watch(PATHS.CSS.SRC, ['js']);
+	let cssWatcher = gulp.watch(PATHS.CSS.SRC, ['css']);
+	let jsWatcher = gulp.watch(PATHS.JS.SRC, ['js']);
 });
 
 gulp.task("copy-html", function() {
